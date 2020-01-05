@@ -1,0 +1,63 @@
+<div class="container">
+    <label>1. Lancer des dés</label>
+           <div><button mat-icon-button (click)="genereDesAleatoires()">lancer</button></div> 
+            <div id="lancerDeDes" style="margin-bottom: 2rem;"></div>
+            <div id="nombreLancer">{{lancer}} lancer restant</div>
+
+            <div><button mat-icon-button (click)="ajoutScore()">ajout Score</button></div>
+            <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Joueur</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">{{suisse}}</th>
+                        <td>Petit Suisse (30 points)</td>
+                        
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">{{carree}}</th>
+                        <td>Carré (total de 4 dés)</td>
+                        
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">{{brelan}}</th>
+                        
+                        <td>Brelan</td>
+                       
+                      </tr>
+                      <tr>
+                            <th scope="row">{{suite}}</th>
+                            
+                            <td>Grande Suite (40 points)</td>
+                           
+                          </tr>
+                          <tr>
+                                <th scope="row">{{yams}}</th>
+                                
+                                <td>Yams (50 points)</td>
+                               
+                              </tr>
+                              <tr>
+                                    <th scope="row">{{chance}}</th>
+                                    
+                                    <td>Chance (Total des 5 dés)</td>
+                                   
+                                  </tr>
+
+                                  <tr>
+                                        <th scope="row">Total</th>
+                                        
+                                        <td>{{score}}</td>
+                                       
+                                      </tr>
+                    </tbody>
+                  </table>
+
+
+</div>
